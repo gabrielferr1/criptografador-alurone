@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logo-g.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/mediaqueries.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <title>Criptografador</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-cabecalho">
+            <div class="logo-cabecalho">
+                <img id="img-logo" src="assets/logo-g.png" alt="Logo do Gabriel Ferri">
+                <h1 class="titulo-cabecalho">Ferri</h1>
+            </div>
+            <div class="nav-menu-cabecalho">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list-cabecalho">
+                <li class="espacamento"><a href="#"><strong class="desfazer-cabecalho">&#8226;</strong> Hacking</a></li>
+                <div class="line-menu"></div>
+                <li><a href="#"><strong class="desfazer-cabecalho">&#8226;</strong> Ferramentas</a></li>
+                <div class="line-menu"></div>
+                <li><a class="destaque" href="#"><strong class="desfazer-cabecalho">&#8226;</strong> 
+                Criptografia</a></li>
+                <div class="line-menu"></div>
+                <li><a href="#"><strong class="desfazer-cabecalho">&#8226;</strong> Ajuda</a></li>
+                <div class="line-menu"></div>
+                <li><a class="destaque-list-contato" href="#"><strong class="desfazer-cabecalho">&#8226;</strong> Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container-main">
+        <div class="texto-main">
+            <p class="paragrafo-texto-main"><a class="link-texto-main" href="#">Ferri</a> &#8811; Turma 6 ONE</p>
+            <h1 class="titulo-texto-main">Criptografia<br>Com nossa <strong class="destaque">Tecnologia</strong> de Ponta</h1>
+        </div>
+        <section class="criptografador-main">
+            <div class="criptografador-texto-main">
+                <label class="titulo-input" for="text">Digite seu texto:</label>
+                <input class="text-input" type="text" name="text" id="text" placeholder="&#10233; Apenas letras minúsculas e sem acento." onfocus="Clicar()" onblur="RestaurarCor()">
+                <label class="titulo-input" for="metadado">Metadado:</label>
+                <select class="metadado-input" name="metadado" id="metadado">
+                    <option value="valor1">alurone</option>
+                </select>
+                <div class="botoes">
+                    <button class="custom-btn enviar-button" onclick="btnCriptografar()">Criptografar</button>
+                    <button class="custom-btn enviar-button" onclick="btnDescriptografar()">Descriptografar</button>
+                </div>
+                <div class="mensagem-area">
+                    <h2 class="titulo-mensagem" id="titulo-mensagem"></h2>
+                    <p class="paragrafo-mensagem" id="paragrafo-mensagem"></p>
+                    <textarea class="mensagem-campo" name="mensagem" id="mensagem" cols="0" rows="2" wrap="soft"></textarea>
+                    <div>
+                        <button class="botao-mensagem" id="botao-copiado" onclick="copiarTexto()">Copiar</button>
+                        <button class="botao-mensagem" onclick="limparTextos()">Limpar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por <strong>Gabriel O. Ferri</strong></p>
+        <a href="https://github.com/gabrielferr1" target="_blank"><img src="assets/icon-github.png" alt="Logo do Github"></a>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/navbar.js"></script>
+</body>
+</html>
